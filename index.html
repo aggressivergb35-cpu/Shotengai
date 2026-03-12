@@ -41,8 +41,10 @@ border-radius:8px;
 <a-scene embedded arjs>
 
 <!-- 店舗認識 -->
-<a-marker type="pattern" url="https://raw.githubusercontent.com/aggressivergb35-cpu/Shotengai/main/pattern-IMG_6601.patt">
-  
+<a-marker 
+type="pattern"
+url="https://raw.githubusercontent.com/aggressivergb35-cpu/Shotengai/main/pattern-IMG_6601.patt"
+markerhandler>
 <a-image
 src="https://cdn-icons-png.flaticon.com/512/545/545674.png"
 position="0 0.8 0"
@@ -106,3 +108,4 @@ document.querySelector('a-marker').setAttribute('markerhandler','')
 function closePanel(){
 document.getElementById("shopPanel").style.display="none"
 }
+</script>
