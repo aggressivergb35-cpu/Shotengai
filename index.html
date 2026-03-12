@@ -41,7 +41,7 @@ border-radius:8px;
 <a-scene embedded arjs>
 
 <!-- 店舗認識 -->
-<a-marker preset="https://raw.githubusercontent.com/aggressivergb35-cpu/Shotengai/main/pattern-IMG_6601.patt">
+<a-marker type="pattern" url="https://raw.githubusercontent.com/aggressivergb35-cpu/Shotengai/main/pattern-IMG_6601.patt">
 
 <a-image
 src="https://cdn-icons-png.flaticon.com/512/545/545674.png"
@@ -88,7 +88,7 @@ init: function () {
 
 const marker = this.el
 const infoBtn = marker.querySelector('.infoBtn')
-const coupon = marker.querySelector('.coupon')
+const coupon = document.querySelector('.coupon')
 
 infoBtn.addEventListener('click', function(){
 document.getElementById("shopPanel").style.display="block"
